@@ -50,16 +50,19 @@ html,body{
     font-size: 5rem;
 }
 
+/* Refers to all hrefs */
 .project-title{
     margin-top: auto;
     margin-bottom: auto;
 }
-
+/* Refer's to individual div of row which encapsulates each href of project section */
 .name, .place, .animal, .thing {
-    margin: 0;
-    width: 100%; /* width of container */
-    height: 75vh; /* height of container */
+    margin: 0;    /* To make the div extend full screen */
+    width: 100%;  /* width of container */
+    height: 75vh; /* 3/4th height of container */
 }
+
+/* Adding bg images to all 4 divs */
 .name{
     background-image: url("/images/name.jpg");
 }
@@ -73,23 +76,17 @@ html,body{
     background-image: url("/images/thing.jpg");
 }
 
-.name_link{
+/* Making project's href margin left and right aligned alternate */
+.name_link, .animal_link{
     margin-left: auto;
     padding-right: 2%;
 }
-.place_link{
-    margin-right: auto;
-    padding-left: 2%;
-}
-.animal_link{
-    margin-left: auto;
-    padding-right: 2%;
-}
-.thing_link{
+.place_link, .thing_link{
     margin-right: auto;
     padding-left: 2%;
 }
 
+/* Making project's href margin centre at mobile screen */
 @media (max-width:993px) {
     .project-title{
         margin: auto;
