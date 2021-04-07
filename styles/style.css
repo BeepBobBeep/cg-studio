@@ -1,0 +1,19 @@
+/* Background color of Menu */
+.navbar-custom{
+    background-color: rgb(32, 32, 32);
+}
+
+/* Modify brand and text color */
+.navbar-custom .navbar-brand{
+    color: rgb(229, 255, 0);
+}
+
+/* change the link color */
+.navbar-custom .navbar-nav .nav-link ,
+.navbar-custom button{
+    color: white;
+}
+
+.navbar-brand{
+    font-size: 4rem;
+}
