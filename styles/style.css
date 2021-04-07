@@ -1,3 +1,15 @@
+html,body{
+    overflow-x: hidden;
+}
+/* TITLE */
+#title{
+    background-image: url("https://image.freepik.com/free-photo/modern-living-room-interior-with-sofa-green-plants-lamp-table-dark-wall-background_41470-1528.jpg");
+    
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: ;
+}
 /* Background color of Menu */
 .navbar-custom{
     background-color: rgb(32, 32, 32);
@@ -18,6 +30,49 @@
     font-size: 4rem;
 }
 
+
+/* CONTENT */
 .front-content{
-    padding: 13% 15%;
+    padding: 5% 10% 26% 25%;
+}
+
+/* PROJECT */
+.container-fluid{
+    font-size: 3.8rem;
+    padding: 0;
+}
+
+.project-title:link, .project-title:visited{
+    color: white;
+    text-decoration: none;
+    font-size: 5rem;
+}
+
+.project-title{
+    margin: auto;
+}
+
+.name{
+    margin: 0;
+    background-image: url("/images/name.jpg");
+    width: 100%; /* width of container */
+    height: 75vh; /* height of container */
+}
+.place{
+    margin: 0;
+    background-image: url("/images/place.jpg");
+    width: 100%; /* width of container */
+    height: 75vh; /* height of container */
+}
+.animal{
+    margin: 0;
+    background-image: url("/images/animal.jpg");
+    width: 100%; /* width of container */
+    height: 75vh; /* height of container */
+}
+.thing{
+    margin: 0;
+    background-image: url("/images/thing.jpg");
+    width: 100%; /* width of container */
+    height: 75vh; /* height of container */
 }
