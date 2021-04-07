@@ -3,15 +3,16 @@ html,body{
 }
 /* TITLE */
 #title{
+    /* BG image of opening  */
     background-image: url("https://image.freepik.com/free-photo/modern-living-room-interior-with-sofa-green-plants-lamp-table-dark-wall-background_41470-1528.jpg");
     
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-blend-mode: ;
 }
 /* Background color of Menu */
 .navbar-custom{
+    /* Currently not used */
     background-color: rgb(32, 32, 32);
 }
 
@@ -33,6 +34,7 @@ html,body{
 
 /* CONTENT */
 .front-content{
+    /* What are we and paragraph */
     padding: 5% 10% 26% 25%;
 }
 
@@ -49,30 +51,47 @@ html,body{
 }
 
 .project-title{
-    margin: auto;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
-.name{
+.name, .place, .animal, .thing {
     margin: 0;
-    background-image: url("/images/name.jpg");
     width: 100%; /* width of container */
     height: 75vh; /* height of container */
+}
+.name{
+    background-image: url("/images/name.jpg");
 }
 .place{
-    margin: 0;
     background-image: url("/images/place.jpg");
-    width: 100%; /* width of container */
-    height: 75vh; /* height of container */
 }
 .animal{
-    margin: 0;
     background-image: url("/images/animal.jpg");
-    width: 100%; /* width of container */
-    height: 75vh; /* height of container */
 }
 .thing{
-    margin: 0;
     background-image: url("/images/thing.jpg");
-    width: 100%; /* width of container */
-    height: 75vh; /* height of container */
+}
+
+.name_link{
+    margin-left: auto;
+    padding-right: 2%;
+}
+.place_link{
+    margin-right: auto;
+    padding-left: 2%;
+}
+.animal_link{
+    margin-left: auto;
+    padding-right: 2%;
+}
+.thing_link{
+    margin-right: auto;
+    padding-left: 2%;
+}
+
+@media (max-width:993px) {
+    .project-title{
+        margin: auto;
+    }   
 }
