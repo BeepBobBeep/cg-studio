@@ -50,16 +50,23 @@ html,body{
     font-size: 5rem;
 }
 
-/* Refers to all hrefs */
-.project-title{
-    margin-top: auto;
-    margin-bottom: auto;
+
+.article-container{
+    /* It contains link and bg image of each project section*/
+    width: 100%; /* width of container */
+    height: 75vh; /* 3/4th height of container */
+    overflow: hidden; /* To hide extra when zoom */
+    position: relative;
 }
-/* Refer's to individual div of row which encapsulates each href of project section */
+/* Refer's to individual div of row which have bg image of project section */
 .name, .place, .animal, .thing {
     margin: 0;    /* To make the div extend full screen */
-    width: 100%;  /* width of container */
-    height: 75vh; /* 3/4th height of container */
+    width: 100%;  /* To make this take full space of parent article section */
+    height: 100%; /* To make this take full space of parent article section */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: transform 3s ease;
 }
 
 /* Adding bg images to all 4 divs */
@@ -75,20 +82,31 @@ html,body{
 .thing{
     background-image: url("/images/thing.jpg");
 }
+.name:hover, .place:hover, .animal:hover, .thing:hover{
+    transform: scale(1.1);
+}
+.project-title{
+    position: absolute; /* To make it out of flow as we want link to be above the article-container */ 
+    /* To make it centre vertically */
+    top: 50%;
+    transform: translate(0,-50%);
+}
 
 /* Making project's href margin left and right aligned alternate */
 .name_link, .animal_link{
-    margin-left: auto;
+    right: 0;
     padding-right: 2%;
 }
 .place_link, .thing_link{
-    margin-right: auto;
+    left: 0;
     padding-left: 2%;
 }
 
 /* Making project's href margin centre at mobile screen */
 @media (max-width:993px) {
     .project-title{
-        margin: auto;
+        left: 50%;
+        right: inherit;
+        transform: translate(-50%,-50%);
     }   
 }
